@@ -113,7 +113,6 @@ export const signInUser = createAsyncThunk('signinuser', async (body) => {
                 position: toast.POSITION.TOP_RIGHT
             });
             // navigate('/');
-           
         }
         return res.data;
     } catch (error) {
@@ -121,6 +120,14 @@ export const signInUser = createAsyncThunk('signinuser', async (body) => {
         throw error;
     }
 });
+
+// const productsDataApi = createAsyncThunk('productdata',()=>{
+//     try {
+//         const res = axios.get('');
+//     } catch (error) {
+//         console.log(error);
+//     }
+// })
 
 const AuthSlice = createSlice({
     name: "user",
@@ -217,7 +224,6 @@ const AuthSlice = createSlice({
         },
         [signUpUser.fulfilled]: (state, { payload: { error, message } }) => {
             state.loading = false;
-
             if (error) {
                 state.error = error;
             } else {

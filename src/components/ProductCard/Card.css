@@ -1,0 +1,45 @@
+.card__container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.pagination__container{
+
+}
+.pagination{
+    display: flex;
+    justify-content: center;
+    padding: auto;
+    margin: 1rem;
+}
+ 
+.pagination > span{
+    border: 1px solid rgb(89, 96, 243);
+    padding: 10px;
+    border-radius: 25%;
+    margin: 2px;
+    cursor: pointer;
+}
+.selectedPage{
+    
+    background-color: rgb(9, 39, 103);
+    color: rgb(255, 255, 255);
+}
+.cardcontainer{
+    transition:all .7s ease-in-out;
+    /* animation: cardanimate 1s linear reverse infinite; */
+}
+.cardcontainer:hover{
+    transform: scale(1.1);
+    background-color: rgb(12, 35, 101);
+    color: white;
+}
+@keyframes cardanimate {
+    0%{
+        transform: rotate(-1deg) translatey(.5em);
+    }
+    100%{
+        transform:rotate(1deg) translatex(.5em);
+    }
+}

@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from './components/auth/Login';
 import Registration from './components/auth/Registration';
 import Home from './components/pages/Home';
+import ViewCart from './components/pages/ViewCart';
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
         <Route exact path='/' element={<Home/>}/>
         <Route exact path='/login' element={<Login/>} />
         <Route exact path='/Registration' element={<Registration/>} />
+        <Route exact path='/view-cart' element={<ViewCart/>} />
       </Routes>
     </BrowserRouter>
   )
