@@ -13,11 +13,9 @@ import { ApiProvider } from './context/ApiContext.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <ApiProvider>
-        {/* <ThemeProvider> */}
-            <Provider store={store}>
-                <ToastContainer />
-                <App />
-            </Provider>
-        {/* </ThemeProvider> */}
+        <Provider store={store}>
+            <ToastContainer />
+            <App />
+        </Provider>
     </ApiProvider>
 )

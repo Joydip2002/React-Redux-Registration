@@ -20,15 +20,12 @@ const Home = () => {
             <Login />
         )
     }
-
     const logoutFunc = () => {
         dispatch(logout());
     }
-
     // useEffect(()=>{
     //     document.body.style.backgroundColor = localStorage.getItem('theme');
     // },[theme])
-
     return (
         <>
             <Nabbar user = {user} logout = {logoutFunc}/>
